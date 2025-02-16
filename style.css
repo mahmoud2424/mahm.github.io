@@ -35,3 +35,7 @@ button:hover {
     display: none;
     margin-top: 20px;
 }
+#qrLink {
+    display: none;
+}
+
