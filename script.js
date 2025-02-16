@@ -26,6 +26,7 @@ function checkAnswers() {
         document.getElementById("message").innerText = "تهانينا! هذا هو الـ QR Code الخاص بك:";
         document.getElementById("qrCode").src = "Q.Png";
         document.getElementById("qrCode").style.display = "block";
+         document.getElementById("qrCode").style.display = "inline";
     } else {
         attempts--;
         document.getElementById("attempts").innerText = attempts;
