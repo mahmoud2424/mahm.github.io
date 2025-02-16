@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحدي الألغاز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>حل الألغاز للوصول إلى الـ QR Code</h2>
+        <p>لديك <strong id="attempts">3</strong> محاولات فقط!</p>
+
+        <label>فك الشيفرة: 01001000 01101001</label><br>
+        <input type="text" id="puzzle1"><br>
+
+        <label>فك الشيفرة: 01000011 01101111 01100100 01100101</label><br>
+        <input type="text" id="puzzle2"><br>
+
+        <label>فك الشيفرة:  Δ ⍺ ⍴ ϵ</label><br>
+        <input type="text" id="puzzle3"><br>
+
+        <label>فك الشيفرة:  ⍴ ⍺ ϑ ϵ</label><br>
+        <input type="text" id="puzzle4"><br>
+
+        <label>حل المعادلة: 5 + 3 × 2 = ؟</label><br>
+        <input type="text" id="puzzle5"><br>
+
+        <label>ما الرقم التالي في السلسلة: 1, 1, 2, 3, 5, ؟</label><br>
+        <input type="text" id="puzzle6"><br>
+
+        <label>إذا كان فأر واحد يأكل قطعتين بسكويت في 10 دقائق، فكم من الوقت يحتاج فأران لأكل قطعتين من البسكويت؟</label><br>
+        <input type="text" id="puzzle7"><br>
+
+        <label>إذا كانت 3 آلات تحتاج إلى 3 دقائق لصنع 3 قطع، فكم دقيقة تحتاج 100 آلة لصنع 100 قطعة؟</label><br>
+        <input type="text" id="puzzle8"><br>
+
+        <label>قارب يمكنه التحرك مع التيار بسرعة 12 كم/س وضد التيار بسرعة 8 كم/س، فما سرعته في المياه الساكنة؟</label><br>
+        <input type="text" id="puzzle9"><br>
+
+        <button onclick="checkAnswers()">تحقق</button>
+        <p id="message"></p>
+        <img id="qrCode" src="Q.png" alt="QR Code">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
