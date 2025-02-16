@@ -21,22 +21,21 @@ function checkAnswers() {
             break;
         }
     }
+    
     if (allCorrect) {
-     document.getElementById("message").innerText = "تهانينا! هذا هو الـ QR Code الخاص بك:";
-     document.getElementById("qrCode").src = "Q.png";
-     document.getElementById("qrCode").style.display = "block";
-     
-     // إظهار الرابط
-     document.getElementById("qrLink").style.display = "inline"; // يظهر الرابط عند الإجابة الصحيحة
-} else {
-     attempts--;
-     document.getElementById("attempts").innerText = attempts;
-     if (attempts <= 0) {
-         alert("لقد استنفدت محاولاتك! سيتم إعادة تحميل الصفحة.");
-         location.reload();
-     } else {
-         document.getElementById("message").innerText = "إجابة خاطئة! تبقى لك " + attempts + " محاولات.";
-     }
-}
-}
+        // إذا كانت الإجابات صحيحة
+        document.getElementById("message").innerText = "تهانينا! هذا هو الـ QR Code الخاص بك:";
+        document.getElementById("qrCode").style.display = "block";  // إظهار الصورة
+        document.getElementById("qrLink").style.display = "inline"; // إظهار الرابط
+    } else {
+        // إذا كانت الإجابات خاطئة
+        attempts--;
+        document.getElementById("attempts").innerText = attempts;
+        if (attempts <= 0) {
+            alert("لقد استنفدت محاولاتك! سيتم إعادة تحميل الصفحة.");
+            location.reload();
+        } else {
+            document.getElementById("message").innerText = "إجابة خاطئة! تبقى لك " + attempts + " محاولات.";
+        }
+    }
 }
